@@ -23,10 +23,19 @@ repositories {
 }
 
 dependencies {
+    //Spring Boot
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //Spring Boot Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //Lombok
     implementation 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //Spring JPA
+    implementation 'org.springframework.boot:spring-boot-starter-jpa'
+    //H2 DataBase
+    implementation 'com.h2database:h2'
+
 }
 
 test {
